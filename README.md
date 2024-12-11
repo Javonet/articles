@@ -1,12 +1,7 @@
 # Javonet Articles Code Samples
-This repository hosts code samples referenced in our articles, offering ready-to-run examples that illustrate key concepts and best practices. Each subfolder corresponds to a specific article, making it easy to find and experiment with the code as you learn.
+This repository hosts code samples referenced in our articles, offering ready-to-run examples that illustrate key concepts and best practices. Each subfolder corresponds to a specific article, making it easy to find and experiment with the code as you learn. You can find all articles at https://www.javonet.com/blog/.
 
-
-
-Javonet Tutorials
-This repository provides simple, step-by-step tutorials demonstrating how to integrate multiple programming languages with Javonet. You can find all articles at https://www.javonet.com/blog/.
-
-License
+## License
 The Apache License 2.0 applies to all samples in this repository.
 
 Copyright 2013 SdNcenter
