@@ -1,9 +1,10 @@
 # Javonet Articles Code Samples
 This repository hosts code samples referenced in our articles, offering ready-to-run examples that illustrate key concepts and best practices. Each subfolder corresponds to a specific article, making it easy to find and experiment with the code as you learn. You can find all articles at https://www.javonet.com/blog/.
 
-## Articles
-- [How to use Azure SDK with Unsupported Programming Languages? – Ruby](how-to-use-azure-sdk-with-unsupported-programming-languages-ruby/)
+## Articles (New Articles First)
+- [Why Limit Yourself? Unlock Python's AI Power in .NET with PyTorch Integration!](/why-limit-yourself-unlock-python's-ai-power-in-.net-with-pytorch-integration)
 - [How to use PyJokes in Other Programming Languages?!](/how-to-use-pyjokes-in-other-programming-languages/)
+- [How to use Azure SDK with Unsupported Programming Languages? – Ruby](how-to-use-azure-sdk-with-unsupported-programming-languages-ruby/)
 
 ## License
 The Apache License 2.0 applies to all samples in this repository.
