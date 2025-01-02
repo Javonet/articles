@@ -1,4 +1,4 @@
-![Azure SDK](./images/AzureSDK.png)
+![Azure SDK](./AzureSDK.png)
 
 # 🧑‍💻 How to use Azure SDK with Unsupported Programming Languages? - Ruby
 
