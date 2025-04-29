@@ -25,7 +25,6 @@
             var addResult = _invocationContext
                 .InvokeInstanceMethod("add", _invocationContext, a, b).Execute();
             return (int)addResult.GetValue();
-            throw new NotImplementedException();
         }
     }
 }
