@@ -29,7 +29,7 @@ namespace WebAppPyTests.Controllers
         {
             var pythonRuntime = Javonet.InMemory().Python();
 
-            pythonRuntime.LoadLibrary(@"C:\coding\python\Calculator");
+            pythonRuntime.LoadLibrary("your-python-class-path");
 
             var calc = pythonRuntime.GetType("calculator.Calculator").Execute();
             var result = calc.InvokeInstanceMethod("add", calc, a, b).Execute();
