@@ -1,0 +1,6 @@
+@WebAppPyTests_HostAddress = http://localhost:5233
+
+GET {{WebAppPyTests_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
