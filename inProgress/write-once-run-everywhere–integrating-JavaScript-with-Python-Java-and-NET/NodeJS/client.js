@@ -1,11 +1,20 @@
-const {Javonet} = require('javonet-nodejs-sdk')
 const PythonWrapper = require('./pythonWrapper');
-
-Javonet.activate("n9B5-Km7g-Pp69-j9FE-e9A5");
+const JavaWrapper = require('./javaWrapper');
+const CsharpWrapper = require('./csharpWrapper')
 
 console.log("Hello, World from NODEJS!!");
 
-const wrapper = new PythonWrapper();
+const pythonWrapper = new PythonWrapper();
 
-console.log(wrapper.helloWorld());
-console.log("add(5, 7):", wrapper.add(5, 7));
+console.log(pythonWrapper.helloWorld());
+console.log("add(5, 7):", pythonWrapper.add(5, 7));
+
+const javaWrapper = new JavaWrapper();
+
+console.log(javaWrapper.helloWorld());
+console.log("add(5, 7):", javaWrapper.add(5, 7));
+
+const csharpWrapper = new CsharpWrapper();
+
+console.log(csharpWrapper.helloWorld());
+console.log("add(5, 7):", csharpWrapper.add(5, 7));

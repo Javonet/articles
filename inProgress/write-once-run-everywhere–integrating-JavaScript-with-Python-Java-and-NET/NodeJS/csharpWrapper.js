@@ -1,11 +1,11 @@
 const { Javonet } = require('javonet-nodejs-sdk');
 
-class PythonWrapper {
+class CsharpWrapper {
   constructor() {
     Javonet.activate("n9B5-Km7g-Pp69-j9FE-e9A5");
-    const runtimeContext = Javonet.inMemory().python();
+    const runtimeContext = Javonet.inMemory().netcore();
 
-    runtimeContext.loadLibrary("./../Python/MyClass.py");
+    runtimeContext.loadLibrary("./");
 
     this.invocationContext = runtimeContext
       .getType("MyClass.MyClass")
@@ -14,7 +14,7 @@ class PythonWrapper {
 
   helloWorld() {
     const result = this.invocationContext
-      .invokeInstanceMethod("hello_world", this.invocationContext)
+      .invokeInstanceMethod("HelloWorld", this.invocationContext)
       .execute();
 
     return result.getValue();
@@ -22,11 +22,11 @@ class PythonWrapper {
 
   add(a, b) {
     const result = this.invocationContext
-      .invokeInstanceMethod("add", this.invocationContext, a, b)
+      .invokeInstanceMethod("Add", this.invocationContext, a, b)
       .execute();
 
     return result.getValue();
   }
 }
 
-module.exports = PythonWrapper;
+module.exports = CsharpWrapper;

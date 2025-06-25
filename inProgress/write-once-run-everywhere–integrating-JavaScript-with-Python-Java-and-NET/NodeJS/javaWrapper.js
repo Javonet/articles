@@ -1,11 +1,11 @@
 const { Javonet } = require('javonet-nodejs-sdk');
 
-class PythonWrapper {
+class JavaWrapper {
   constructor() {
     Javonet.activate("n9B5-Km7g-Pp69-j9FE-e9A5");
-    const runtimeContext = Javonet.inMemory().python();
+    const runtimeContext = Javonet.inMemory().jvm();
 
-    runtimeContext.loadLibrary("./../Python/MyClass.py");
+    runtimeContext.loadLibrary("./../MyClass.jar");
 
     this.invocationContext = runtimeContext
       .getType("MyClass.MyClass")
@@ -14,7 +14,7 @@ class PythonWrapper {
 
   helloWorld() {
     const result = this.invocationContext
-      .invokeInstanceMethod("hello_world", this.invocationContext)
+      .invokeInstanceMethod("helloWorld", this.invocationContext)
       .execute();
 
     return result.getValue();
@@ -29,4 +29,4 @@ class PythonWrapper {
   }
 }
 
-module.exports = PythonWrapper;
+module.exports = JavaWrapper;
